@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Hebrew KaTeX LTR Fix",
+  "version": "1.0",
+  "description": "When Hebrew text is present, force KaTeX math spans to stay left-to-right.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://chatgpt.com/*",
+        "*://*.openai.com/*"
+      ],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
