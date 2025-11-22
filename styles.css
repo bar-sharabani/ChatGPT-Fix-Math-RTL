@@ -1,0 +1,5 @@
+/* Force KaTeX to be LTR + isolated from surrounding Hebrew text */
+span.katex {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+}
